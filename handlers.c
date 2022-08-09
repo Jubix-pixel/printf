@@ -184,7 +184,7 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_t *,
 		{'p', convert_p},
 		{'r', convert_r},
 		{'R', convert_R},
-		{0, NULL};
+		{0, NULL}
 	};
 
 	for (i = 0; converters[i].func; i++)
