@@ -39,7 +39,7 @@ unsigned char handle_flags(const char *flag, char *index)
 					ret = flags[j].value;
 				else
 					ret |= flags[j].value;
-				break
+				break;
 			}
 		}
 		if (flags[j].value == 0)
@@ -182,8 +182,8 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_t *,
 		{'X', convert_X},
 		{'S', convert_S},
 		{'p', convert_p},
-		{'r', convert_r};
-		{'R', convert_R};
+		{'r', convert_r},
+		{'R', convert_R},
 		{0, NULL};
 	};
 
